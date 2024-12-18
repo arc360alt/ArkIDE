@@ -28,7 +28,7 @@
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: $menu-bar-standard-font-size;
     font-weight: bold;
-    background-color: $menu-bar-background;
+    background-color: #4634eb;
     background-image: $menu-bar-background-image;
     color: $menu-bar-foreground;
 }
@@ -71,7 +71,7 @@
 
 .menu-bar-item.active,
 .menu-bar-item.hoverable:hover {
-    background-color: $ui-black-transparent;
+    background-color: #4634eb;
 }
 
 .menu-bar-item.growable {

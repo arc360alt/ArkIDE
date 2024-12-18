@@ -1,3 +1,4 @@
+import turboWarpLogo from './scratch-logo.svg';
 import classNames from 'classnames';
 import {connect} from 'react-redux';
 import {compose} from 'redux';
@@ -483,7 +484,16 @@ class MenuBar extends React.Component {
                     this.props.className,
                     styles.menuBar
                 )}
-            >
+                >
+        <img
+            src={require('./scratch-logo.svg')} // Path to your custom logo file
+            alt="Custom Logo"
+            style={{
+                width: '100px',
+                height: '50px',
+            }}
+        />
+
                 <div className={styles.mainMenu}>
                     <div className={styles.fileGroup}>
                         {this.props.errors.length > 0 && <div>
@@ -1003,26 +1013,7 @@ class MenuBar extends React.Component {
                         ) : []))}
                     </div>
                     {/* tw: add a feedback button */}
-                    <div className={styles.menuBarItem}>
-                        <a
-                            className={styles.feedbackLink}
-                            href="https://scratch.mit.edu/users/GarboMuffin/#comments"
-                            rel="noopener noreferrer"
-                            target="_blank"
-                        >
-                            {/* todo: icon */}
-                            <Button className={styles.feedbackButton}>
-                                <FormattedMessage
-                                    defaultMessage="{APP_NAME} Feedback"
-                                    description="Button to give feedback in the menu bar"
-                                    id="tw.feedbackButton"
-                                    values={{
-                                        APP_NAME
-                                    }}
-                                />
-                            </Button>
-                        </a>
-                    </div>
+                   
                 </div>
 
                 <div className={styles.accountInfoGroup}>
@@ -1033,6 +1024,7 @@ class MenuBar extends React.Component {
 
                 {aboutButton}
             </Box>
+
         );
     }
 }
@@ -1223,4 +1215,5 @@ export default compose(
         mapStateToProps,
         mapDispatchToProps
     )
+
 )(MenuBar);

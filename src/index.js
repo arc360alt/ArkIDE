@@ -1,3 +1,5 @@
+document.title = 'My Custom Title - TurboWarp';  // Your custom title
+
 import GUI from './containers/gui.jsx';
 import AppStateHOC from './lib/app-state-hoc.jsx';
 import GuiReducer, {guiInitialState, guiMiddleware, initEmbedded, initFullScreen, initPlayer} from './reducers/gui';
@@ -12,6 +14,12 @@ const guiReducers = {
     scratchGui: GuiReducer,
     scratchPaint: ScratchPaintReducer
 };
+
+const link = document.createElement('link');
+link.rel = 'icon';
+link.href = 'favicon.ico';  // Set the path to your favicon here
+document.head.appendChild(link);
+
 
 export {
     GUI as default,
