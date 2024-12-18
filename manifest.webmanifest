@@ -1,7 +1,7 @@
 {
-  "short_name": "TurboWarp",
+  "short_name": "ArkIDE",
   "name": "TurboWarp",
-  "description": "Mod of Scratch 3 with a compiler, dark mode, and more features.",
+  "description": "A Mod of turbowarp meant to just be a passion project",
   "icons": [
     {
       "src": "images/192.png",
