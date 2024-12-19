@@ -1,4 +1,4 @@
-scratch-gui modified for use in [TurboWarp](https://turbowarp.org/)
+scratch-gui modified for use in [TurboWarp](https://turbowarp.org/) Then modified for use in [ArkIDE](https://www.arc360.xyz) :D
 
 ## Setup
 
