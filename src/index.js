@@ -1,4 +1,4 @@
-document.title = 'My Custom Title - TurboWarp';  // Your custom title
+document.title = 'My Custom Title - ArkIDE';  // Your custom title
 
 import GUI from './containers/gui.jsx';
 import AppStateHOC from './lib/app-state-hoc.jsx';
