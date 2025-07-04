@@ -1,5 +1,5 @@
 #### scratch-gui modified for use in [TurboWarp](https://turbowarp.org/) Then modified for use in [ArkIDE](https://www.arc360.xyz) :D
-#### I wiped the ssd that had the whole file group for this because I'm dumb, so don't expect any more updates, like ever.
+#### Back to updating this, got Github Actions working, and im making some acutal changes to the develop thing instead of making changes to the gh-pages one that will be wiped opon changes.
 
 ## Setup
 
