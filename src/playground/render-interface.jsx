@@ -134,13 +134,13 @@ const Footer = () => (
                     </a>
                 </div>
                 <div className={styles.footerSection}>
-                    <a href="https://desktop.turbowarp.org/">
+                    <a href="https://arc360hub.com/">
                         {/* Do not translate */}
-                        {'TurboWarp Desktop'}
+                        {'ArkIDE Desktop'}
                     </a>
-                    <a href="https://packager.turbowarp.org/">
+                    <a href="https://arc360hub.com/">
                         {/* Do not translate */}
-                        {'TurboWarp Packager'}
+                        {'ArkIDE Packager'}
                     </a>
                     <a href="https://docs.turbowarp.org/embedding">
                         <FormattedMessage
