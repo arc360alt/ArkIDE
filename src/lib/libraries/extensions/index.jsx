@@ -415,7 +415,7 @@ export const galleryLoading = {
             }}
         />
     ),
-    href: 'https://extensions.turbowarp.org/',
+    href: 'https://www.arc360hub.com/extensions/index.html',
     extensionId: 'gallery',
     iconURL: galleryIcon,
     description: (
@@ -430,6 +430,8 @@ export const galleryLoading = {
     featured: true
 };
 
+
+
 export const galleryMore = {
     name: (
         <FormattedMessage
@@ -441,7 +443,7 @@ export const galleryMore = {
             }}
         />
     ),
-    href: 'https://extensions.turbowarp.org/',
+    href: 'https://www.arc360hub.com/extensions/index.html',
     extensionId: 'gallery',
     iconURL: galleryIcon,
     description: (
@@ -467,7 +469,7 @@ export const galleryError = {
             }}
         />
     ),
-    href: 'https://extensions.turbowarp.org/',
+    href: 'https://www.arc360hub.com/extensions/index.html',
     extensionId: 'gallery',
     iconURL: galleryIcon,
     description: (
@@ -481,3 +483,4 @@ export const galleryError = {
     tags: ['tw'],
     featured: true
 };
+

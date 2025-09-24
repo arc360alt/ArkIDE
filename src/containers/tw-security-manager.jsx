@@ -24,8 +24,10 @@ const manuallyTrustExtension = url => {
  * @returns {boolean} True if the extension can is trusted
  */
 const isTrustedExtension = url => (
-    // Always trust our official extension repostiory.
+    // Always trust our official extension repostiory and PenguinMod + Sharkpool.
     url.startsWith('https://extensions.turbowarp.org/') ||
+    url.startsWith('https://extensions.penguinmod.com/') ||
+    url.startsWith('https://sharkpools-extensions.vercel.app/') ||
 
     // For development.
     url.startsWith('http://localhost:8000/') ||
