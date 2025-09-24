@@ -82,7 +82,14 @@ const SBFileUploaderHOC = function (WrappedComponent) {
                                 {
                                     description: 'Scratch Project',
                                     accept: {
-                                        'application/x.scratch.sb3': ['.sb', '.sb2', '.sb3']
+                                        // Chrome on Android tracks the MIME type of files that get downloaded and
+                                        // then actually enforces that the type must match in showOpenFilePicker()
+                                        // and does not allow the user to override the filter. As Scratch projects have
+                                        // no well-defined and well-adopted MIME types, we can't assume anything about
+                                        // what MIME type they are saved with, so we have to use the most broad MIME
+                                        // type here. Otherwise some users just won't be able to load files for no
+                                        // fault of their own.
+                                        '*/*': ['.sb', '.sb2', '.sb3']
                                     }
                                 }
                             ]
@@ -99,8 +106,7 @@ const SBFileUploaderHOC = function (WrappedComponent) {
                         if (err && err.name === 'AbortError') {
                             return;
                         }
-                        // eslint-disable-next-line no-console
-                        console.error(err);
+                        log.error(err);
                     }
                 })();
             } else {
